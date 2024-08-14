@@ -1,6 +1,6 @@
 #include "main.h"
 #include "lemlib/api.hpp"
-bool pneumatics = false;
+bool pneumatics = LOW;
 bool intake = false;
 pros::Controller master(pros::E_CONTROLLER_MASTER);
 pros::MotorGroup left_motors({1, 2, 3}, pros::MotorGearset::green);
