@@ -4,8 +4,8 @@
 bool pneumatics = LOW;
 bool intake = false;
 pros::Controller master(pros::E_CONTROLLER_MASTER);
-pros::MotorGroup left_motors({1, 2, 3}, pros::MotorGearset::green);
-pros::MotorGroup right_motors({4, 5, 6}, pros::MotorGearset::green);
+pros::MotorGroup left_motors({1, 2, 3}, pros::MotorGearset::blue);
+pros::MotorGroup right_motors({4, 5, 6}, pros::MotorGearset::blue);
 pros::Motor intake_motor(7, pros::E_MOTOR_GEAR_200, false, pros::E_MOTOR_ENCODER_COUNTS);
 lemlib::Drivetrain drivetrain(&left_motors, &right_motors, 8, lemlib::Omniwheel::NEW_325, 360, 2);
 lemlib::Chassis chassis(drivetrain, lateral_controller, angular_controller, sensors);
