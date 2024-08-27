@@ -1,5 +1,6 @@
 #include "main.h"
 #include "lemlib/api.hpp"
+#include "auton.cpp"
 bool pneumatics = LOW;
 bool intake = false;
 pros::Controller master(pros::E_CONTROLLER_MASTER);
